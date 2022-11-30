@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>INFO</title>
+</head>
+<body>
+<div>
+    <ul>
+        <li><b>Manager</b>:
+            <ul>
+                <li>http://localhost:3466/manager/manager (GET & POST)</li>
+                <li>http://localhost:3466/guest (GET)</li>
+                <li>http://localhost:3466/info (GET)</li>
+            </ul>
+        </li>
+        <li><b>Guest</b>:
+            <ul>
+                <li>http://localhost:3466/guest (GET)</li>
+                <li>http://localhost:3466/info (GET)</li>
+            </ul>
+        </li>
+        <li><b>Unauthorized</b>:
+            <ul>
+                <li>http://localhost:3466/info (GET)</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<hr>
+<div>
+    <ul>
+        <li><b>GET method</b>:
+            <ul>
+                <li>&lt;path&gt; (to get guest page)</li>
+                <li>&lt;path&gt;?all (to get all products from database)</li>
+                <li>&lt;path&gt;?&lt;productName1&gt;&&lt;productName2&gt;&&lt;productName3&gt; (to get products with respective names from database)</li>
+            </ul>
+            <p>&lt;path&gt; = "/guest" or "/manager/manager"</p>
+        </li>
+        <li><b>POST method</b>:
+            <ul>
+                <li>Must have parameters "name", "organization_name" and "quantity"</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+</body>
+</html>
